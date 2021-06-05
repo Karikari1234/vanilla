@@ -2,11 +2,11 @@
 
 // This is an example script - don't forget to change it!
 
-mixpanel.init("26393110afa29af5d52b9e0b9c922b80");
-mixpanel.track('Button Click', {
-  'source': "Pat's affiliate site",
-  'Opted out of email': true,
-});
+// mixpanel.init("26393110afa29af5d52b9e0b9c922b80");
+// mixpanel.track('Button Click', {
+//   'source': "Pat's affiliate site",
+//   'Opted out of email': true,
+// });
 
 
 LogRocket.identify("xhntst/nafiz-rahman", {
@@ -17,9 +17,9 @@ LogRocket.identify("xhntst/nafiz-rahman", {
   subscriptionType: "pro",
 });
 
-LogRocket.getSessionURL(function (sessionURL) {
-  mixpanel.track('LogRocket', { sessionURL: sessionURL });
-});
+// LogRocket.getSessionURL(function (sessionURL) {
+//   mixpanel.track('LogRocket', { sessionURL: sessionURL });
+// });
 
 const data = [
   ["Year", "Tesla", "Volvo", "Toyota", "Ford"],
