@@ -8,7 +8,6 @@
 //   'Opted out of email': true,
 // });
 
-
 LogRocket.identify("xhntst/nafiz-rahman", {
   name: "James Morrison",
   email: "jamesmorrison@example.com",
@@ -92,14 +91,16 @@ resetConsole.addEventListener("click", () => {
   };
 })();
 
-var map = L.map("map").setView([51.505, -0.09], 13);
-
+var map = L.map("map", {
+  center: [23.8103, 90.4125],
+  zoom: 13,
+});
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution:
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
 
-L.marker([51.5, -0.09])
+L.marker([23.8103, 90.4125])
   .addTo(map)
   .bindPopup("A pretty CSS3 popup.<br> Easily customizable.")
   .openPopup();
